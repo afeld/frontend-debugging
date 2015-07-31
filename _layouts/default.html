@@ -6,8 +6,8 @@
   </head>
   <body>
     <nav class="navbar">
-      {% for other in site.pages %}
-        <a href="{{ other.url }}">{{ other.path }}</a>
+      {% for other in site.examples %}
+        <a href="{{ other.url }}">{{ other.url | remove: '/' }}</a>
       {% endfor %}
     </nav>
 
