@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Frontend Debugging Exercises</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      {% for other in site.pages %}
+        <a href="{{ other.url }}">{{ other.path }}</a>
+      {% endfor %}
+    </nav>
+
+    {{ content }}
+
+  </body>
+</html>
