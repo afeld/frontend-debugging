@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Frontend Debugging Exercises</title>
+    <link rel="stylesheet" href="../style.css"/>
   </head>
   <body>
-    <nav class="navbar">
+    <ul class="navbar">
+      <li>
+        <img class="logo" src="../assets/logo.png"/>
+      </li>
       {% for other in site.examples %}
-        <a href="{{ other.url }}">{{ other.url | remove: '/' }}</a>
+        <li>
+          <a href="..{{ other.url }}">{{ other.url | remove: '/' }}</a>
+        </li>
       {% endfor %}
-    </nav>
-
-    {{ content }}
-
+    </ul>
+    <div class="content">
+      {{ content }}
+    </div>
   </body>
 </html>

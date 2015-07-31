@@ -1,3 +1,4 @@
+baseurl: /frontend-debugging
 collections:
   examples:
     output: true
