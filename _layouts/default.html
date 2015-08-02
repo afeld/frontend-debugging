@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <title>Frontend Debugging Exercises</title>
-    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="{{site.baseurl}}/style.css"/>
   </head>
   <body class="page-{{ page.url | remove: '/' }}">
     <ul class="navbar">
       <li>
-        <img class="logo" src="../assets/logo.png"/>
+        <a href="{{site.baseurl}}/">
+          <img class="logo" src="{{site.baseurl}}/assets/logo.png"/>
+        </a>
       </li>
       {% for other in site.examples %}
         <li>
-          <a href="..{{ other.url }}">{{ other.url | remove: '/' }}</a>
+          <a href="{{site.baseurl}}{{ other.url }}">{{ other.url | remove: '/' }}</a>
         </li>
       {% endfor %}
     </ul>
