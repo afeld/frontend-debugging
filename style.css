@@ -7,6 +7,9 @@ body {
 }
 
 .navbar .logo {
+  text-decoration: none;
+}
+.navbar .logo img {
   height: 60px;
   vertical-align: middle;
 }
@@ -21,9 +24,9 @@ body {
 }
 
 
-/* example-specific styles */
+/* page-specific styles */
 
-.page-2_button button {
+.page-button button {
   background-color: white;
   border-radius: 15px;
   border: 2px solid blue;
@@ -32,6 +35,6 @@ body {
   padding: 10px 19px;
 }
 
-.page-2_button button:hover {
+.page-button button:hover {
   background-color: blue;
 }

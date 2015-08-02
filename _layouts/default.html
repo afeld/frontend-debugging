@@ -8,11 +8,12 @@
   <body class="page-{{ page.url | remove: '/' }}">
     <ul class="navbar">
       <li>
-        <a href="{{site.baseurl}}/">
-          <img class="logo" src="{{site.baseurl}}/assets/logo.png"/>
+        <a class="logo" href="{{site.baseurl}}/">
+          <img src="{{site.baseurl}}/assets/logo.png"/>
         </a>
       </li>
-      {% for other in site.examples %}
+      {% assign sorted_pages = site.examples | sort:"order" %}
+      {% for other in sorted_pages %}
         <li>
           <a href="{{site.baseurl}}{{ other.url }}">{{ other.url | remove: '/' }}</a>
         </li>
